@@ -34,7 +34,7 @@ PaymentMethodView.prototype._initialize = function () {
     case paymentMethodTypes.applePay:
       html = html.replace(/@ICON/g, 'logoApplePay')
         .replace(/@CLASSNAME/g, '')
-        .replace(g, this.strings['Apple Pay'])
+        .replace(/@TITLE/g, this.strings['Apple Pay'])
         .replace(/@SUBTITLE/g, '');
       break;
     case paymentMethodTypes.card:
