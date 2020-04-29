@@ -66,6 +66,10 @@ PaymentOptionsView.prototype._addPaymentOption = function (paymentOptionID) {
       paymentSource = this.strings.Venmo;
       html = html.replace(/@ICON/g, 'logoVenmo');
       break;
+    case paymentOptionIDs.invoice:
+        paymentSource = this.strings.invoice;
+        html = html.replace(/@ICON/g, 'logoInvoice');
+        break;
     default:
       break;
   }

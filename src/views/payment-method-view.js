@@ -34,7 +34,7 @@ PaymentMethodView.prototype._initialize = function () {
     case paymentMethodTypes.applePay:
       html = html.replace(/@ICON/g, 'logoApplePay')
         .replace(/@CLASSNAME/g, '')
-        .replace(/@TITLE/g, this.strings['Apple Pay'])
+        .replace(g, this.strings['Apple Pay'])
         .replace(/@SUBTITLE/g, '');
       break;
     case paymentMethodTypes.card:
@@ -62,6 +62,12 @@ PaymentMethodView.prototype._initialize = function () {
         .replace(/@TITLE/g, this.paymentMethod.details.username)
         .replace(/@SUBTITLE/g, this.strings.Venmo);
       break;
+    case paymentMethodTypes.invoice:
+        html = html.replace(/@ICON/g, 'logoInvoice')
+          .replace(/@CLASSNAME/g, '')
+          .replace(/@TITLE/g, this.strings.invoice)
+          .replace(/@SUBTITLE/g, '');
+        break;
     default:
       break;
   }

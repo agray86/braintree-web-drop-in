@@ -10,5 +10,6 @@ result[paymentOptionIDs.googlePay] = require('./google-pay-view');
 result[paymentOptionIDs.paypal] = require('./paypal-view');
 result[paymentOptionIDs.paypalCredit] = require('./paypal-credit-view');
 result[paymentOptionIDs.venmo] = require('./venmo-view');
+result[paymentOptionIDs.invoice] = require('./invoice-view');
 
 module.exports = result;

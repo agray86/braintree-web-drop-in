@@ -13,7 +13,8 @@ var PAYMENT_METHOD_TYPE_TO_TRANSLATION_STRING = {
   PayPalAccount: 'PayPal',
   ApplePayCard: 'Apple Pay',
   AndroidPayCard: 'Google Pay',
-  VenmoAccount: 'Venmo'
+  VenmoAccount: 'Venmo',
+  Invoice: 'Invoice'
 };
 
 function PaymentMethodsView() {

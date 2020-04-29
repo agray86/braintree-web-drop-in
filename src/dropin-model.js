@@ -14,9 +14,11 @@ var vaultManager = require('braintree-web/vault-manager');
 var VAULTED_PAYMENT_METHOD_TYPES_THAT_SHOULD_BE_HIDDEN = [
   paymentMethodTypes.applePay,
   paymentMethodTypes.googlePay,
-  paymentMethodTypes.venmo
+  paymentMethodTypes.venmo,
+  paymentMethodTypes.invoice
 ];
 var DEFAULT_PAYMENT_OPTION_PRIORITY = [
+  paymentOptionIDs.invoice,
   paymentOptionIDs.card,
   paymentOptionIDs.paypal,
   paymentOptionIDs.paypalCredit,
@@ -362,7 +364,6 @@ function getPaymentOption(paymentOption, options) {
 
 function isPaymentOptionEnabled(paymentOption, options) {
   var SheetView = paymentSheetViews[paymentOptionIDs[paymentOption]];
-
   if (!SheetView) {
     return Promise.reject(new DropinError('paymentOptionPriority: Invalid payment option specified.'));
   }

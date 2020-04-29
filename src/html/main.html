@@ -90,6 +90,23 @@
           <div data-braintree-id="google-pay-button"></div>
         </div>
       </div>
+      <div data-braintree-id="invoice" class="braintree-invoice braintree-sheet">
+        <div data-braintree-id="invoice-sheet-header" class="braintree-sheet__header">
+          <div class="braintree-sheet__header-label">
+            <div class="braintree-sheet__logo--header">
+              <svg height="24" width="40">
+              <use xlink:href="#logoInvoice"></use>
+              </svg>
+            </div>
+            <div class="braintree-sheet__label">{{invoice}}</div>
+          </div>
+        </div>
+        <div class="braintree-sheet__content braintree-sheet__content--button">
+          <div>
+            <button type="button" data-braintree-id="invoice-button">Invoice My Account</button>
+          </div>
+        </div>
+      </div>
       <div data-braintree-id="venmo" class="braintree-venmo braintree-sheet">
         <div data-braintree-id="venmo-sheet-header" class="braintree-sheet__header">
           <div class="braintree-sheet__header-label">

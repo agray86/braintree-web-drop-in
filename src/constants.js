@@ -7,7 +7,8 @@ module.exports = {
     paypalCredit: 'paypalCredit',
     applePay: 'applePay',
     venmo: 'venmo',
-    googlePay: 'googlePay'
+    googlePay: 'googlePay',
+    invoice: 'invoice'
   },
   paymentMethodTypes: {
     card: 'CreditCard',
@@ -15,14 +16,16 @@ module.exports = {
     paypalCredit: 'PayPalAccount',
     applePay: 'ApplePayCard',
     venmo: 'VenmoAccount',
-    googlePay: 'AndroidPayCard'
+    googlePay: 'AndroidPayCard',
+    invoice: "Invoice",
   },
   analyticsKinds: {
     CreditCard: 'card',
     PayPalAccount: 'paypal',
     ApplePayCard: 'applepay',
     VenmoAccount: 'venmo',
-    AndroidPayCard: 'googlepay'
+    AndroidPayCard: 'googlepay',
+    Invoice: 'invoice',
   },
   paymentMethodCardTypes: {
     Visa: 'visa',
